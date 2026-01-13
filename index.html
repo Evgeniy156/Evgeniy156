@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description" content="DEIR Assistant: Energy & Liberation System" />
+    <title>DEIR Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap');
+      
+      html, body {
+        height: 100%;
+        overflow: hidden;
+        overscroll-behavior-y: none; /* Prevents rubber-banding on iOS */
+        -webkit-tap-highlight-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f172a;
+        color: #e2e8f0;
+      }
+      
+      h1, h2, h3, .brand-font {
+        font-family: 'Cinzel', serif;
+      }
+
+      /* Better touch handling */
+      button, a, input, select, textarea {
+        touch-action: manipulation;
+      }
+
+      /* Custom Scrollbar */
+      .custom-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(139, 92, 246, 0.3) rgba(255, 255, 255, 0.05);
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(139, 92, 246, 0.3); /* Purple-500/30 */
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(168, 85, 247, 0.5); /* Purple-500/50 */
+      }
+
+      /* Energy Flow Animations */
+      @keyframes flowUp {
+        0% { transform: translateY(100%); opacity: 0; }
+        50% { opacity: 0.8; }
+        100% { transform: translateY(-100%); opacity: 0; }
+      }
+      @keyframes flowDown {
+        0% { transform: translateY(-100%); opacity: 0; }
+        50% { opacity: 0.8; }
+        100% { transform: translateY(100%); opacity: 0; }
+      }
+      @keyframes pulse-aura {
+        0% { box-shadow: 0 0 10px rgba(139, 92, 246, 0.2); }
+        50% { box-shadow: 0 0 30px rgba(139, 92, 246, 0.6); }
+        100% { box-shadow: 0 0 10px rgba(139, 92, 246, 0.2); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "DEIR Assistant: Energy & Liberation",
+  "description": "An interactive guide and AI assistant based on the DEIR (Further Energy-Informational Development) system. Features energy flow visualizations, exercise guides, and an AI mentor trained on the 'Liberation' textbook.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
